@@ -8,10 +8,11 @@ public class Maskify {
             hashtags = hashtags.concat("#");
             i = i + 1;
           }
-        }
         Integer beginSecond = characters + 1;
-        String strSecond = str.substring(beginSecond, str.length());
-
+        String strSecond = str.substring(beginSecond, str.length()); 
         return hashtags + strSecond;
+        } else {
+        return str;    
+        }
     }
 }
